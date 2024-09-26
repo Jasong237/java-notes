@@ -35,7 +35,7 @@ console.log(d);
 
 //conditional statements
 //evaluate to true or false
-const guess = 5;
+const guess = 1;
 if (guess > 0) {
   console.log("positive number");
 } else if (guess < 0) {
@@ -46,6 +46,39 @@ if (guess > 0) {
   console.log("not a number");
 }
 
+const number = 12;
+if (guess % 2) {
+  console.log("even");
+} else {
+  console.log("odd");
+}
+function isOdd(x) {
+  if (x % 2 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function larger(x, y) {
+  if (typeof x !== Number || typeof y !== Number) {
+    return;
+  }
+  if (y < x) {
+    return x;
+  } else if (x < y) {
+    return y;
+  } else if (y === x) {
+    return { x, y };
+  }
+}
+
+const isHerb = true;
+const weight = 50;
+const predator = false;
+if (isHerb == true) 
+
+// if (x !== typeof(number)){
 // == evaluation without type, === evaluation with type
 /* 0 == "0"; //equal
 0 === "0"; //not equal
