@@ -59,6 +59,37 @@ function isOdd(x) {
     return false;
   }
 }
+canroam(false, 30, false);
+function canroam(herb, pounds, pred) {
+  if (typeof herb == true && pounds < 50 && pred == true) {
+    console.log("go in");
+  } else {
+    console.log("go out");
+  }
+}
+
+discount(200, false, false);
+function discount(age, is_resident, has_membership) {
+  if (
+    age < 12 ||
+    age > 65 ||
+    typeof is_resident == true ||
+    has_membership == true
+  ) {
+    console.log("OKAY");
+  } else {
+    console.log("NO");
+  }
+}
+
+// kg/m^2
+/* bmi(jason, 10, 1000);
+function bmi(name, height, weight) {
+  console.log("name");
+  height * height == heightsq;
+  weight / heightsq == bmi;
+  console.log("x");
+} */
 
 function larger(x, y) {
   if (typeof x !== Number || typeof y !== Number) {
@@ -73,10 +104,20 @@ function larger(x, y) {
   }
 }
 
-const isHerb = true;
-const weight = 50;
-const predator = false;
-if (isHerb == true) 
+// roam(true, 30, true);
+// function roam(is_herbivore, weight, is_predator) {
+//   // Check the conditions
+//   const isAllowed = is_herbivore && weight < 50 && !is_predator;
+
+//   // Output the result
+//   if (isAllowed) {
+//     console.log("The animal is allowed in the open area");
+//   } else {
+//     console.log("The animal is NOT allowed in the open area");
+//   }
+// }
+
+// Example usage:
 
 // if (x !== typeof(number)){
 // == evaluation without type, === evaluation with type
